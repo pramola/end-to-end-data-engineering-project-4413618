@@ -1,0 +1,19 @@
+version: 2
+
+models:
+      - name: dim_customers
+        description: "Checking for null values"
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+          - name: email
+            tests:
+              - not_null
+          - name: city
+            tests:
+              - not_null
+          - name: country
+            tests:
+              - not_null
